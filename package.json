@@ -1,6 +1,6 @@
 {
   "name": "carlo-webpack",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple Node API for Carlo + Webpack",
   "main": "index.js",
   "repository": "laggingreflex/carlo-webpack",
