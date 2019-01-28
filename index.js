@@ -20,7 +20,7 @@ module.exports = async (opts) => {
 
   let uri = opts.carlo.load.uri;
 
-  if (!opts.dev) {
+  if (opts.dev) {
     const devServer = await webpack.devServer(opts.webpack.devServer, opts.webpack.watcher);
     let { address, port } = devServer.address();
     if (!address || address === '0.0.0.0' || '::' === address) {
