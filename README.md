@@ -13,18 +13,21 @@ npm i carlo-webpack
 ```js
 const carloWebpack = require('carlo-webpack')
 const config = require('./webpack.config.js')
-const app = await carloWebpack({
+const { runDevServer, build, launch } = await carloWebpack({
   webpack: { config },
 })
+
+await build() // OR
+await runDevServer()
+// then
+const app = await launch();
 ```
 
 ### API
 
 ```js
-const app = carloWebpack(opts)
+carloWebpack(opts)
 ```
-
-* **`app`** Return value of Carlo's [carlo.launch]
 
 * **`opts`**
 
