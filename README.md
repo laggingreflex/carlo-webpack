@@ -2,6 +2,8 @@
 
 Simple Node API for [Carlo] + [Webpack]
 
+\* **Requires Node >= v10.12.0**
+
 ## Install
 
 ```sh
